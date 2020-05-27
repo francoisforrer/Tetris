@@ -20,6 +20,10 @@ private:
     void setCoords(int index, int x, int y);
     int getX(int index);
     int getY(int index);
+    int CoordXmax();
+    int CoordYmax();
+    int CoordXmin();
+    int CoordYmin();
 };
 
 #endif
