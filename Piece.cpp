@@ -152,6 +152,69 @@ void Piece::setCoords(int index, int x, int y){
 
 }
 
+int Piece::CoordXmax(){
+    int Xmax = 10;
+    for (int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                if (m_grille[i][j] = 1){
+                    if(Xmax==10)
+                        Xmax=j;
+                    else if(Xmax<=j){
+                            Xmax=j;
+                    }
+                }
+            }
+        }
+    return Xmax;
+}
+
+int Piece::CoordYmax(){
+    int Ymax = 10;
+    for (int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                if (m_grille[i][j] = 1){
+                    if(Ymax==10)
+                        Ymax=i;
+                    else if(Ymax<=i){
+                        Ymax=i;
+                    }
+                }
+            }
+        }
+    return Ymax;
+}
+
+int Piece::CoordXmin(){
+    int Xmin = 10;
+    for (int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                if (m_grille[i][j] = 1){
+                    if(Xmin==10)
+                        Xmin=j;
+                    else if(Xmin>=j){
+                        Xmin=j;
+                    }
+                }
+            }
+        }
+    return Xmin;
+}
+
+int Piece::CoordYmin(){
+    int Ymin = 10;
+    for (int i=0; i<4; i++){
+            for(int j=0; j<4; j++){
+                if (m_grille[i][j] = 1){
+                    if(Ymin==10)
+                        Ymin=i;
+                    else if(Ymin>=i){
+                    Ymin=i;
+                    }
+                }
+            }
+        }
+    return Ymin;
+}
 
 int Piece::getX(int index){
     return coords[index][0];
